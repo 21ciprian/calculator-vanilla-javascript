@@ -75,4 +75,16 @@ class Calculator {
 			return integerDisplay
 		}
 	}
+	updateDisplay() {
+		this.dataCurrentOperand.innerText = this.getDisplayNumber(
+			this.currentOperand
+		)
+		if (this.operation != null) {
+			this.dataPreviousOperand.innerText = `${this.getDisplayNumber(
+				this.previousOperand
+			)} ${this.operation}`
+		} else {
+			this.dataPreviousOperand.innerText = ''
+		}
+	}
 }
