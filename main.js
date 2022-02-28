@@ -32,4 +32,29 @@ class Calculator {
 		this.previousOperand = this.currentOperand
 		this.currentOperand = ''
 	}
+	calculate() {
+		let calculation
+		const previous = parseFloat(this.previousOperand)
+		const current = parseFloat(this.currentOperand)
+		if (isNaN(previous) || isNaN(current)) return
+		switch (this.operation) {
+			case '+':
+				calculation = previous + current
+				break
+			case '-':
+				calculation = previous - current
+				break
+			case 'x':
+				calculation = previous * current
+				break
+			case '/':
+				calculation = previous / current
+				break
+			default:
+				return
+		}
+		this.currentOperand = calculation
+		this.operation = undefined
+		this.previousOperand = ''
+	}
 }
