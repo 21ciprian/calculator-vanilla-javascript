@@ -19,4 +19,8 @@ class Calculator {
 	deleteDisplay() {
 		this.currentOperand = this.currentOperand.toString().slice(0, -1)
 	}
+	addNumberToScreen(number) {
+		if (number === '.' && this.currentOperand.includes('.')) return
+		this.currentOperand = this.currentOperand.toString() + number.toString()
+	}
 }
