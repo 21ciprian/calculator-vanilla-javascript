@@ -89,3 +89,12 @@ h1 {
 .calculator-container button.op:hover {
 	background-color: #ebb787;
 }
+.calculator-container button.del {
+	background-color: grey;
+	color: black;
+}
+
+.calculator-container button.del:hover {
+	background-color: #302828;
+	color: white;
+}
