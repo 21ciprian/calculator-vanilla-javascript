@@ -88,3 +88,5 @@ class Calculator {
 		}
 	}
 }
+
+const calculator = new Calculator(dataPreviousOperand, dataCurrentOperand)
