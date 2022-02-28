@@ -11,4 +11,9 @@ class Calculator {
 		this.dataCurrentOperand = dataCurrentOperand
 		this.clearDisplay()
 	}
+	clearDisplay() {
+		this.currentOperand = ''
+		this.previousOperand = ''
+		this.operation = undefined
+	}
 }
