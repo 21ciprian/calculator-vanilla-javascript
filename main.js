@@ -90,3 +90,9 @@ class Calculator {
 }
 
 const calculator = new Calculator(dataPreviousOperand, dataCurrentOperand)
+numberButton.forEach(button => {
+	button.addEventListener('click', () => {
+		calculator.addNumberToScreen(button.innerText)
+		calculator.updateDisplay()
+	})
+})
