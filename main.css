@@ -81,3 +81,11 @@ h1 {
 	background-color: #4b2d3c;
 	color: white;
 }
+.calculator-container button.op {
+	background-color: orange;
+	color: black;
+}
+
+.calculator-container button.op:hover {
+	background-color: #ebb787;
+}
