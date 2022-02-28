@@ -16,4 +16,7 @@ class Calculator {
 		this.previousOperand = ''
 		this.operation = undefined
 	}
+	deleteDisplay() {
+		this.currentOperand = this.currentOperand.toString().slice(0, -1)
+	}
 }
