@@ -111,3 +111,7 @@ clearButton.addEventListener('click', button => {
 	calculator.clearDisplay()
 	calculator.updateDisplay()
 })
+deleteButton.addEventListener('click', button => {
+	calculator.deleteDisplay()
+	calculator.updateDisplay()
+})
