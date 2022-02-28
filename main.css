@@ -62,3 +62,13 @@ h1 {
 .calculator-container button:hover {
 	background-color: #4b2d3c;
 }
+.calculator-container button.span-two {
+	background-color: grey;
+	color: black;
+	border-radius: 50px;
+}
+
+.calculator-container button.span-two:hover {
+	background-color: #302828;
+	color: white;
+}
