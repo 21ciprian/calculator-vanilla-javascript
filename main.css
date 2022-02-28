@@ -72,3 +72,12 @@ h1 {
 	background-color: #302828;
 	color: white;
 }
+.calculator-container button.zero {
+	background-color: black;
+	color: white;
+}
+
+.calculator-container button.zero:hover {
+	background-color: #4b2d3c;
+	color: white;
+}
