@@ -5,3 +5,10 @@ const deleteButton = document.querySelector('[data-delete]')
 const clearButton = document.querySelector('[data-clear]')
 const dataPreviousOperand = document.querySelector('[data-previous-operand]')
 const dataCurrentOperand = document.querySelector('[data-current-operand]')
+class Calculator {
+	constructor(dataPreviousOperand, dataCurrentOperand) {
+		this.dataPreviousOperand = dataPreviousOperand
+		this.dataCurrentOperand = dataCurrentOperand
+		this.clearDisplay()
+	}
+}
