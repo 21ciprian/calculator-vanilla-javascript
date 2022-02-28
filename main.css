@@ -98,3 +98,6 @@ h1 {
 	background-color: #302828;
 	color: white;
 }
+.span-two {
+	grid-column: span 2;
+}
